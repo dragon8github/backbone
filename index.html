@@ -133,6 +133,55 @@
 
 
 
+
+
+/**
+* 知识点：sync、save
+* 创建和更新，但暂时不知道怎么和服务器交互
+*/
+// Backbone.sync = function(method,model){
+// 	alert(method + ":" + JSON.stringify(model));
+// 	model.set("id",1);   //这个model == m，当save发生时、会检测model有没有id这个属性，
+// 					     //没有就是create事件，如果有就是update事件.所以第一次会是create，第二次会是update
+// 					     //所以如果想一开始就是update,可以直接在外部使用m.set("id",1);
+// };
+// var M = Backbone.Model.extend({
+// 	defaults:{
+// 		name:"Lee"
+// 	},
+// 	url:"/user"
+// });
+// var m = new M();
+
+// m.save();
+// m.save({name:'Mp'});
+
+
+
+
+/**
+* 知识点： Collection.fetch
+* 读取,暂时不知道如何和服务器交互
+*/
+// Backbone.sync = function(method,model){
+// 	//如果是fetch的话就是read事件
+// 	alert(method + ":" + JSON.stringify(model));
+// };
+
+// var C = Backbone.Collection.extend({
+// 	initialize:function(){
+// 		this.on('reset',function(){
+// 			alert("123");
+// 		});
+// 	},
+// 	url:'/user'
+// });
+
+// var c = new C();
+// c.fetch();
+
+
+
 </script>
 </body>
 </html>
