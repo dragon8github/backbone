@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title></title>
 	<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
 	<script src="https://cdn.bootcss.com/underscore.js/1.8.3/underscore-min.js"></script>
@@ -182,6 +183,49 @@
 
 
 
+/**
+* 知识点：Router,routes
+* 路由，学习hash配置和函数、参数等
+*/
+// var R = Backbone.Router.extend({
+// 	routes:{
+// 		"help":                         "help",		//index.html#help
+// 		"search/:query":                "search",   //index.html#search/asd
+// 		"search/:query/p:page":         "search2"   //index.html#search/asd/p1
+// 	},
+// 	help:function(){alert("help")},
+// 	search:function(query){alert(query)},
+// 	search2:function(query,page){alert(query + "~~~~~" + page)}
+// })
+
+// var r = new R();
+// Backbone.history.start();
+
+
+
+
+
+/**
+* 知识点：View 的 el,events
+*/
+// var V = Backbone.View.extend({
+// 	el:$("body"),
+// 	events:{
+// 		'click #myinput' : 'aaa',
+// 		'mouseover li':'bbb'
+// 	},
+// 	aaa:function(){alert("123")},
+// 	bbb:function(){alert("456")}
+// })
+// var v = new V();
+
 </script>
+<input type="button" id="myinput" value='按钮'></input>
+<ul>
+	<li>111</li>
+	<li>111</li>
+	<li>111</li>
+	<li>111</li>
+</ul>
 </body>
 </html>
